@@ -1,0 +1,11 @@
+.container{
+    max-width: 1245px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.txt{
+    &-center{
+        text-align: center;
+    }
+}

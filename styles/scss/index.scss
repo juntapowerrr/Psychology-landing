@@ -1,0 +1,403 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+@import 'var';
+@import 'common';
+
+@media (max-width: 767px){
+    body.lock{
+        overflow: hidden;
+    }
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #fff, $alpha: 0.8);
+        z-index: 2;
+    }
+    &__body{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 90px;
+        align-items: center;
+        @media (max-width: 375px) {
+            height: 50px;
+        }
+    }
+    &__logo{
+        //flex: 0 0 55px;
+        overflow: hidden;
+        position: relative;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            display: block;
+            max-width: 100%;
+            width: 55px;
+            height: 55px;
+            @media (max-width: 375px) {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    &__title{
+        margin: 0 0 0 12px;
+        &-1{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: $txt-s;
+            color: $dark-green;
+            @media (max-width: 375px) {
+                font-size: 14px;
+            }
+        }
+        &-2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: $dark-green;
+            margin-top: -3px;
+            @media (max-width: 375px) {
+                font-size: 10px;
+            }
+        }
+        @media (max-width: 767px) {
+            margin: 0 0 0 5px;
+        }
+    }
+    &__burger{
+        display: none;
+        cursor: pointer;
+        @media (max-width: 767px) {
+            display: block;
+            position: relative;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px solid $dark-green;
+            position: relative;
+            z-index: 3;
+            &::before, &::after{
+                content: '';
+                background-color: $dark-green;
+                position: absolute;
+                width: 12px;
+                height: 2px;
+                left: 0;
+                transition: all .3s ease 0s;
+            }
+
+            &::before{
+                top: 16px;
+                left: 16px;
+            }
+
+            &::after{
+                bottom: 16px;
+                left: 16px;
+            }
+
+            &.active::before{
+                width: 12px;
+                transform: rotate(45deg);
+                top: 21px;
+                left: 16px;
+            }
+            &.active::after{
+                width: 12px;
+                transform: rotate(-45deg);
+                bottom: 20px;
+                left: 16px;
+            }
+        }
+        @media (max-width: 375px) {
+            width: 30px;
+            height: 30px;
+            &::before, &::after{
+                content: '';
+                width: 10px;
+            }
+
+            &::before{
+                top: 16px;
+                left: 9px;
+            }
+
+            &::after{
+                bottom: 16px;
+                left: 9px;
+            }
+
+            &.active::before{
+                top: 13px;
+                left: 8px;
+            }
+            &.active::after{
+                bottom: 13px;
+                left: 8px;
+            }
+        }
+    }
+    &__menu{
+        @media (max-width: 767px){
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: all .3s ease 0s;
+            background-color: $light-green;
+            padding: 90px 15px 20px 15px;
+            &.active{
+                top: 0;
+            }
+        }
+        @media (max-width: 375px){
+            padding: 70px 15px 20px 15px;
+            &.active{
+                top: 0;
+            }
+        }
+    }
+    &__list{
+        display: flex;
+        position: relative;
+        z-index: 2;
+        li{
+            margin: 0 20px;
+            @media (max-width: 767px){
+                margin: 20px 0;
+                // &:first-child{
+                //     margin: 0 0 20px 0;
+                // }
+            }
+        }
+        @media (max-width: 767px){
+            display: block;
+        }
+    }
+    &__link{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: $txt-xxs;
+        color: $dark-green;
+    }
+}
+
+.main-section{
+    padding: 120px 0 0 0;
+    @media (max-width: 768px){
+        padding: 90px 0 0 0;
+    }
+    @media (max-width: 375px){
+        padding: 50px 0 0 0;
+    }
+    @media (max-width: 550px){
+        .container{
+            padding: 0;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        @media (max-width: 1070px) {
+            position: relative;
+        }
+    }
+    &__content{
+        max-width: 650px;
+        width: 100%;
+        @media (max-width: 1070px) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            margin: 0 0 0 15px;
+        }
+        @media (max-width: 550px){
+            margin: 0;
+            padding: 0 15px;
+            bottom: 50px;
+        }
+    }
+    &--title{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: $txt-xxxl;
+        color: $dark-green;
+        @media (max-width: 767px) {
+            font-size: $txt-xxl;
+        }
+        @media (max-width: 550px) {
+            font-size: 42px;
+        }
+        @media (max-width: 500px) {
+            font-size: 32px;
+        }
+        @media (max-width: 375px) {
+            font-size: 26px;
+        }
+    }
+    &--txt{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: $txt-xs;
+        color: $dark-green-2;
+        margin: 25px 0 0 0;
+        @media (max-width: 767px) {
+            margin: 15px 0 0 0;
+        }
+        @media (max-width: 550px) {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+        }
+        @media (max-width: 500px) {
+            font-size: 12px;
+        }
+        @media (max-width: 375px) {
+            font-size: 10px;
+        }
+    }
+    &__action{
+        margin: 50px 0 0 0;
+        @media (max-width: 767px) {
+            margin: 15px 0 0 0;
+        }
+        @media (max-width: 550px) {
+            margin: 10px 0 0 0;
+        }
+        .btn-action-1{
+            width: 194px;
+            height: 50px;
+            color: #fff;
+            background-color: $dark-green-3;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: $txt-xxs;
+            margin: 0 8px 0 0;
+            border-bottom: 4px solid transparent;
+            &:hover{
+                background-color: $dark-green;
+                border-bottom: 4px solid $dark;
+                transform: scale(1.03);
+                transition: all .1s ease;
+            }
+        }
+        .btn-action-2{
+            width: 194px;
+            height: 50px;
+            color: $dark;
+            background-color: $silver;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: $txt-xxs;
+            border-bottom: 4px solid transparent;
+            &:hover{
+                background-color: $light-yellow;
+                border-bottom: 4px solid $dark-green;
+                transform: scale(1.03);
+                transition: all .1s ease;
+            }
+            @media (max-width: 550px) {
+                display: none;
+            }
+        }
+    }
+    &__img{
+        margin: 0 0 0 60px;
+        @media (max-width: 1070px) {
+            margin: 0 auto;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 1px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: block;
+                background: rgb(255,255,255);
+                background: linear-gradient(180deg, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 100%);
+                z-index: 1;
+            }
+        }
+        img{
+            border-radius: 41px;
+            width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+            @media (max-width: 1070px) {
+                // height: auto;
+                // width: auto;
+                // margin: 0 auto;
+            }
+            @media (max-width: 550px) {
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+.about-section{
+    margin: 150px 0 0 0;
+    position: relative;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    &__img{
+        margin: 0 140px 0 0;
+        img{
+            border-radius: 41px;
+            display: block;
+        }
+    }
+    &__content{
+        max-width: 610px;
+    }
+    &--title{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: $txt-xxxl;
+        color: $dark-green;
+        line-height: 72px;
+        letter-spacing: -0.04em;
+    }
+    &--txt{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: $txt-xs;
+        color: $dark-green-2;
+        line-height: 26px;
+        margin: 25px 0 0 0;
+    }
+    .btn-action{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: $txt-xxs;
+        width: 186px;
+        height: 48px;
+        background-color: $silver;
+        color: $dark-green;
+        border-radius: 8px;
+        margin: 60px 0 0 0;
+    }
+}

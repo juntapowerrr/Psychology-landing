@@ -23,7 +23,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba($color: #fff, $alpha: 0.8);
+        background-color: rgba($color: #fff, $alpha: 0.9);
         z-index: 2;
     }
     &__body{
@@ -58,7 +58,6 @@
     &__title{
         margin: 0 0 0 12px;
         &-1{
-            font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             font-size: $txt-s;
             color: $dark-green;
@@ -67,7 +66,6 @@
             }
         }
         &-2{
-            font-family: 'Montserrat', sans-serif;
             font-weight: 400;
             font-size: 14px;
             color: $dark-green;
@@ -161,7 +159,7 @@
             width: 100%;
             height: 100%;
             transition: all .3s ease 0s;
-            background-color: $light-green;
+            background-color: rgba($color: #fff, $alpha: 0.9);
             padding: 90px 15px 20px 15px;
             &.active{
                 top: 0;
@@ -192,10 +190,17 @@
         }
     }
     &__link{
-        font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         font-size: $txt-xxs;
         color: $dark-green;
+        margin: -4px;
+        padding: 4px;
+        box-shadow: inset 0 0 0 0 $light-green;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        &:hover{
+            box-shadow: inset 100px 0 0 0 $light-green;
+            color: #fff;
+        }
     }
 }
 
@@ -236,7 +241,6 @@
         }
     }
     &--title{
-        font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-size: $txt-xxxl;
         color: $dark-green;
@@ -254,7 +258,6 @@
         }
     }
     &--txt{
-        font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         font-size: $txt-xs;
         color: $dark-green-2;
@@ -283,11 +286,10 @@
         }
         .btn-action-1{
             width: 194px;
-            height: 50px;
+            height: 48px;
             color: #fff;
             background-color: $dark-green-3;
             border-radius: 8px;
-            font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             font-size: $txt-xxs;
             margin: 0 8px 0 0;
@@ -301,11 +303,10 @@
         }
         .btn-action-2{
             width: 194px;
-            height: 50px;
+            height: 48px;
             color: $dark;
             background-color: $silver;
             border-radius: 8px;
-            font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             font-size: $txt-xxs;
             border-bottom: 4px solid transparent;
@@ -344,11 +345,6 @@
             height: auto;
             display: block;
             position: relative;
-            @media (max-width: 1070px) {
-                // height: auto;
-                // width: auto;
-                // margin: 0 auto;
-            }
             @media (max-width: 550px) {
                 border-radius: 0;
             }
@@ -374,7 +370,6 @@
         max-width: 610px;
     }
     &--title{
-        font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         font-size: $txt-xxxl;
         color: $dark-green;
@@ -382,7 +377,6 @@
         letter-spacing: -0.04em;
     }
     &--txt{
-        font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         font-size: $txt-xs;
         color: $dark-green-2;
@@ -390,7 +384,6 @@
         margin: 25px 0 0 0;
     }
     .btn-action{
-        font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         font-size: $txt-xxs;
         width: 186px;

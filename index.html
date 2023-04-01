@@ -53,22 +53,48 @@
             </div>
         </div>
     </div>
-    <!-- <div class="about-section">
+    <div class="about-section">
        <div class="about-section__wrapper container">
             <div class="about-section__img">
-                <img src="./assets/images/photo-2.png" alt="Marinkova Oksana">
+                <picture>
+                    <source srcset="./assets/images/photo-2.png" type="image/png" media="(min-width: 1071px)">
+                    <source srcset="./assets/images/photo-3.png" type="image/png" media="(max-width: 768px)">
+                    <img src="./assets/images/photo-2.png" alt="Marinkova Oksana">
+                </picture>
             </div>
             <div class="about-section__content">
-                <h2 class="about-section--title">Познайомимось?</h2>
-                <p class="about-section--txt">
-                    Привіт! Мене звати Оксана, я практикуючий сертифікований гештальт терапевт. 
-                    У практиці перебуваю понад 9 років. Особиста психотерапія захопила мене так сильно, що мене не зупинити. 
-                    Я вивчала себе, свої реакції, патерни дитинства. Проходила вкрай складний шлях для себе і здобула величезний досвід.
-                </p>
-                <button class="btn-action txt-center">Дізнатись більше</button>
+                <header class="tabs-nav">
+                    <ul>
+                      <li class="active"><a href="#tab1">Моя історія</a></li>
+                      <li><a href="#tab2">Напрямки роботи</a></li>
+                      <li><a href="#tab3">Сертифікати</a></li>
+                    </ul>
+                </header>
+                <section class="tabs-content">
+                    <div id="tab1">
+                      <h3>Познайомимось?</h3>
+                      <p>
+                        Привіт! Мене звати Оксана, я практикуючий сертифікований гештальт терапевт. 
+                        У практиці перебуваю понад 9 років. Особиста психотерапія захопила мене так сильно, що мене не зупинити. 
+                        Я вивчала себе, свої реакції, патерни дитинства. Проходила вкрай складний шлях для себе і здобула величезний досвід.
+                      </p>
+                    </div>
+                    <div id="tab2">
+                      <h3>Title</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus facere suscipit vel ipsa iure labore praesentium, illo nisi odio incidunt porro, accusamus ad quis explicabo culpa tempore, voluptatem tempora maxime.
+                      </p>
+                    </div>
+                    <div id="tab3">
+                      <h3>Title</h3>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore temporibus, voluptate voluptatem perferendis, aliquid nulla eaque facere doloribus quam eos laboriosam, odio sequi molestiae nobis odit deserunt sapiente. Blanditiis, dolorem.
+                      </p>
+                    </div>
+                </section>
             </div>
        </div>
-    </div> -->
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
 </body>

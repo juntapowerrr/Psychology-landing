@@ -381,6 +381,7 @@ button {
   font-weight: 600;
   font-size: 16px;
   margin: 0 8px 0 0;
+  border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
 }
 .main-section__action .btn-action-1:hover {
@@ -397,6 +398,7 @@ button {
   border-radius: 8px;
   font-weight: 600;
   font-size: 16px;
+  border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
 }
 .main-section__action .btn-action-2:hover {
@@ -486,8 +488,8 @@ button {
 @media (max-width: 768px) {
   .about-section__img img {
     border-radius: 50%;
-    -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(169, 177, 129, 0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(169, 177, 129, 0.75);
     box-shadow: 3px 3px 5px 0px rgba(169, 177, 129, 0.75);
   }
 }
@@ -511,9 +513,8 @@ button {
 .about-section__content .tabs-nav li {
   display: inline-block;
   background: #A9B181;
-  color: #fefefe;
   border-radius: 20px 20px 0 0;
-  margin-right: -5px;
+  margin-right: -4px;
 }
 @media (max-width: 1070px) {
   .about-section__content .tabs-nav li {
@@ -526,12 +527,12 @@ button {
     border-radius: 15px 15px 0 0;
   }
 }
+.about-section__content .tabs-nav li:hover {
+  background: #E5EACB;
+}
 .about-section__content .tabs-nav li.active {
   background: #E5EACB;
   color: #313714;
-}
-.about-section__content .tabs-nav li.active a {
-  color: inherit;
 }
 .about-section__content .tabs-nav a {
   display: block;
@@ -540,11 +541,13 @@ button {
   font-size: 18px;
   color: #313714;
   white-space: nowrap;
+  border-radius: 20px 20px 0 0;
 }
 @media (max-width: 768px) {
   .about-section__content .tabs-nav a {
     font-size: 16px;
     padding: 10px;
+    border-radius: 15px 15px 0 0;
   }
 }
 @media (max-width: 550px) {
@@ -577,7 +580,6 @@ button {
 .about-section__content .tabs-content {
   padding: 45px;
   background: #E5EACB;
-  overflow: hidden;
   max-width: 700px;
   min-height: 485px;
   width: 100%;
@@ -586,12 +588,12 @@ button {
 @media (max-width: 1070px) {
   .about-section__content .tabs-content {
     min-height: 100%;
-    padding: 20px;
+    padding: 20px 20px 30px 20px;
   }
 }
 @media (max-width: 768px) {
   .about-section__content .tabs-content {
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
   }
 }
 .about-section__content .tabs-content div:not(:first-child) {

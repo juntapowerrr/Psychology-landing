@@ -482,7 +482,10 @@ button {
   margin: 0 20px 0 0;
   max-width: 100%;
   height: auto;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
 }
 .about-section__img img {
   border-radius: 41px;
@@ -500,16 +503,20 @@ button {
 }
 @media (max-width: 1070px) {
   .about-section__img {
-    margin: 0 0 0 0;
-    padding: 1px 0;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .about-section__img {
+    max-width: 75%;
   }
 }
 .about-section__content {
-  margin: 50px 0 0 0;
+  padding: 50px 0 0 0;
 }
 @media (max-width: 1070px) {
   .about-section__content {
-    margin: 10px 0 0 0;
+    padding: 10px 0 20px 0;
   }
 }
 .about-section__content .tabs-nav {
@@ -593,12 +600,12 @@ button {
 @media (max-width: 1070px) {
   .about-section__content .tabs-content {
     min-height: 100%;
-    padding: 20px 20px 30px 20px;
+    padding: 20px 20px 40px 20px;
   }
 }
 @media (max-width: 768px) {
   .about-section__content .tabs-content {
-    padding: 10px 10px 20px 10px;
+    padding: 10px 10px 30px 10px;
   }
 }
 .about-section__content .tabs-content div:not(:first-child) {
@@ -637,6 +644,7 @@ button {
   font-weight: 400;
   color: #1C2200;
   margin: 24px 0 0 0;
+  line-height: 16px;
 }
 @media (max-width: 620px) {
   .about-section__content .tabs-content div p {
@@ -654,4 +662,19 @@ button {
   .about-section__content .tabs-content div p {
     font-size: 12px;
   }
+}
+
+.cases__titles {
+  padding: 25px 0 50px 0;
+}
+.cases__title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #313714;
+}
+.cases__txt {
+  font-size: 18px;
+  font-weight: 400;
+  color: #52525B;
+  margin-top: 25px;
 }

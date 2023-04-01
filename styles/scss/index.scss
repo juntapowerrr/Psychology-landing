@@ -379,7 +379,10 @@
         margin: 0 20px 0 0;
         max-width: 100%;
         height: auto;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
         img{
             border-radius: 41px;
             display: block;
@@ -392,15 +395,19 @@
                 box-shadow: 3px 3px 5px 0px rgba($color: $light-green, $alpha: 0.75);
             }
         }
+
         @media (max-width: 1070px) {
-            margin: 0 0 0 0;
-            padding: 1px 0;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            max-width: 75%;
+            //height: auto;
         }
     }
     &__content{
-        margin: 50px 0 0 0;
+        padding: 50px 0 0 0;
         @media (max-width: 1070px) {
-            margin: 10px 0 0 0;
+            padding: 10px 0 20px 0;
         }
         .tabs-nav{
             max-width: 100%;
@@ -467,10 +474,10 @@
             border-radius: 0 0 20px 20px;
             @media (max-width: 1070px) {
                 min-height: 100%;
-                padding: 20px 20px 30px 20px;
+                padding: 20px 20px 40px 20px;
             }
             @media (max-width: 768px) {
-                padding: 10px 10px 20px 10px;
+                padding: 10px 10px 30px 10px;
             }
             div:not(:first-child) {
                 display: none;
@@ -501,6 +508,7 @@
                 font-weight: 400;
                 color: $dark-green-2;
                 margin: 24px 0 0 0;
+                line-height: 16px;
                 @media (max-width: 620px) {
                     font-size: $txt-xxs;
                     margin: 12px 0 0 0;
@@ -514,5 +522,23 @@
                 }
             }
         }
+    }
+}
+
+.cases{
+    &__titles{
+        padding: 25px 0 50px 0;
+    }
+    &__title{
+        font-size: $txt-l;
+        font-weight: 700;
+        color: $dark-green;
+        //padding: 25px 0;
+    }
+    &__txt{
+        font-size: $txt-xs;
+        font-weight: 400;
+        color: $gray;
+        margin-top: 25px;
     }
 }

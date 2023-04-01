@@ -41,6 +41,11 @@ button {
   cursor: pointer;
 }
 
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 .container {
   max-width: 1245px;
   padding: 0 15px;

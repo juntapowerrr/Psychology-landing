@@ -77,11 +77,11 @@
             margin: 15px 0 0 0;
         }
         &__card{
-            max-width: 340px;
+            max-width: 440px;
             min-height: 410px;
             padding: 20px;
             &--title{
-                font-size: $txt-xxs;
+                font-size: $txt-xs;
             }
             &--price{
                 font-size: 30px;
@@ -89,7 +89,7 @@
             }
             &--txt{
                 font-size: 14px;
-                line-height: 20px;
+                line-height: 14px;
             }
         }
         &__action{

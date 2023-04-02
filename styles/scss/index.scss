@@ -578,7 +578,7 @@
 }
 
 .prices{
-    padding: 50px 0;
+    padding: 50px 0 0 0 0;
     // &__titles{
 
     // }
@@ -619,7 +619,8 @@
         align-items: center;
         justify-content: flex-start;
         max-width: 440px;
-        min-height: 600px;
+        min-height: 615px;
+        //max-height: 600px;
         padding: 30px;
         border-radius: 15px;
         background-color: #fff;

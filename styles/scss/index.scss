@@ -577,4 +577,109 @@
     }
 }
 
+.prices{
+    padding: 50px 0;
+    // &__titles{
+
+    // }
+    &__title{
+        font-size: $txt-l;
+        font-weight: 700;
+        color: $dark-green;
+        //padding: 25px 0;
+    }
+    &__txt{
+        font-size: $txt-xs;
+        font-weight: 400;
+        color: $gray;
+        margin: 25px 0 0 0;
+    }
+    &__wrapper{
+        // width: 100%;
+        // height: auto;
+        background-image: url(../../assets/images/price-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px 0;
+        margin: 50px 0 0 0;
+        border-radius: 15px;
+        //overflow: hidden;
+    }
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 15px;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 440px;
+        min-height: 600px;
+        padding: 30px;
+        border-radius: 15px;
+        background-color: #fff;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+        &--logo{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: $light-green;
+        }
+        &--title{
+            font-size: $txt-s;
+            font-weight: 600;
+            color: $dark-green-2;
+            margin: 20px 0 0 0;
+        }
+        &--price{
+            font-size: $txt-xl;
+            font-weight: 600;
+            color: $dark-green;
+            margin: 15px 0 45px 0;
+        }
+        &--txt{
+            font-size: $txt-xxs;
+            font-weight: 400;
+            line-height: 24px;
+            width: 100%;
+            margin: 0 0 15px 0;
+            color: $dark-green;
+            position: relative;
+            padding: 0 0 0 35px;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                background-color: $light-green;
+                border-radius: 50%;
+            }
+        }
+    }
+    &__action{
+        margin: 50px 0 0 0;
+        text-align: center;
+        &--btn{
+            padding: 12px 100px;
+            max-width: 376px;
+            height: 48px;
+            font-size: $txt-xxs;
+            font-weight: 500;
+            color: #fff;
+            background-color: $dark-green-3;
+            border-radius: 10px;
+            white-space: nowrap;
+        }
+    }
+}
+
 @import 'media';

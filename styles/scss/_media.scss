@@ -6,6 +6,9 @@
             margin: 50px 0 0 0;
         }
     }
+    // .cases{
+    //     padding: 50px 0;
+    // }
 }
 
 @media (max-width: 768px) {
@@ -16,6 +19,26 @@
         }
         &__txt{
             font-size: $txt-xxs;
+        }
+    }
+    .prices{
+        &__title{
+            font-size: 36px;
+        }
+        &__txt{
+            font-size: $txt-xxs;
+        }
+
+        .container:last-child{
+            padding: 0;
+        }
+        &__wrapper{
+            margin: 30px 0 0 0;
+            border-radius: 0;
+            background-size: cover;
+        }
+        &__cards{
+            padding: 0 15px;
         }
     }
 }
@@ -45,8 +68,44 @@
             }
         }
     }
+    .prices{
+        &__title{
+            font-size: 26px;
+        }
+        &__txt{
+            font-size: 12px;
+            margin: 15px 0 0 0;
+        }
+        &__card{
+            max-width: 340px;
+            min-height: 410px;
+            padding: 20px;
+            &--title{
+                font-size: $txt-xxs;
+            }
+            &--price{
+                font-size: 30px;
+                margin: 15px 0 20px 0;
+            }
+            &--txt{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        &__action{
+            margin: 25px 0 0 0;
+            &--btn{
+                padding: 12px 40px;
+                max-width: 100%;
+            }
+        }
+    }
 }
 
-// @media (max-width: 375px) {
-    
+// @media (max-width: 450px) {
+//     .prices{
+//         &__card{
+//             max-width: 100%;
+//         }
+//     }
 // }

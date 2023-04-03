@@ -7,7 +7,7 @@
             'offset': 0, // You can offset the scroll position.
             'smooth': true, // You can choose if you use smooth scroll or not.
             'smoothDuration': 300, // Scroll speed. (in ms)
-            'smoothEasing': 'default', // Scroll easing.
+            'smoothEasing': 'swing', // Scroll easing.
         }, options);
 
         function fixScroll(targetSlector) {

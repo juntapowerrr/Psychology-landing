@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./styles/css/index.css">
 </head>
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header__body">
@@ -25,20 +30,20 @@
                 <nav class="header__menu">
                     <ul class="header__list">
                         <li>
-                            <a href="" class="header__link">Про мене</a>
+                            <a href="#aboutSection" class="header__link">Про мене</a>
                         </li>
                         <li>
-                            <a href="" class="header__link">Ціни</a>
+                            <a href="#priceSection" class="header__link">Ціни</a>
                         </li>
                         <li>
-                            <a href="" class="header__link">Контакти</a>
+                            <a href="#" class="header__link">Контакти</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <div class="main-section">
+    <div class="main-section" id="mainSection">
         <div class="main-section__wrapper container">
             <div class="main-section__content">
                 <h1 class="main-section--title">Вчу любові до себе через особистий приклад змін</h1>
@@ -53,7 +58,7 @@
             </div>
         </div>
     </div>
-    <div class="about-section">
+    <div class="about-section" id="aboutSection">
        <div class="about-section__wrapper container">
             <div class="about-section__img">
                 <picture>
@@ -95,7 +100,7 @@
             </div>
        </div>
     </div>
-    <div class="cases">
+    <div class="cases" id="caseSection">
         <div class="container">
             <div class="cases__titles">
                 <h2 class="cases__title txt-center">З якими випадками я працюю?</h2>
@@ -147,7 +152,7 @@
             </ul>
         </div>
     </div>
-    <div class="prices">
+    <div class="prices" id="priceSection">
         <div class="container">
             <div class="prices__titles txt-center">
                 <h2 class="prices__title">Послуги та ціни</h2>
@@ -190,7 +195,9 @@
         </div>
         </div>
     </div>
+    <script src="./js/preloader.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.fixedheaderscroll.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>

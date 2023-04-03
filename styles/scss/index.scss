@@ -1,3 +1,4 @@
+@import 'preloader';
 @import 'reset';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 @import 'var';
@@ -526,7 +527,7 @@
 }
 
 .cases{
-    padding: 100px 0;
+    padding: 50px 0;
     // &__titles{
         
     // }
@@ -578,7 +579,7 @@
 }
 
 .prices{
-    padding: 50px 0 0 0 0;
+    padding: 50px 0 200px 0;
     // &__titles{
 
     // }

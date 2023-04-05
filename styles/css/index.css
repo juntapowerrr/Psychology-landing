@@ -829,7 +829,7 @@ button {
 }
 
 .prices {
-  padding: 50px 0 200px 0;
+  padding: 50px 0;
 }
 .prices__title {
   font-size: 42px;
@@ -926,10 +926,162 @@ button {
   white-space: nowrap;
 }
 
+.action {
+  margin: 20px 0 0 0;
+}
+.action__title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #313714;
+  letter-spacing: -2px;
+}
+.action__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 70px 0 0 0;
+  gap: 25px;
+}
+.action__item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 350px;
+  padding: 15px 30px;
+  border: 1px solid #C2C2C2;
+  border-radius: 20px;
+  min-height: 130px;
+}
+.action__item--txt {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1C2200;
+  position: relative;
+  padding: 0 0 0 30px;
+}
+.action__item--txt::before {
+  content: url(../../assets/svg/checkbox.svg);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.action__item--txt span {
+  font-weight: 700;
+}
+.action__form {
+  margin: 100px 0 0 0;
+  background-color: #A9B181;
+  border-radius: 20px;
+  padding: 70px 25px 50px 25px;
+  position: relative;
+  overflow: hidden;
+}
+.action__form::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+  border: 7px solid #fff;
+  transform: rotate(-30deg);
+  display: none;
+}
+.action__form--title {
+  font-size: 42px;
+  font-weight: 600;
+  color: #fff;
+}
+.action__form--txt {
+  font-size: 18px;
+  font-weight: 400;
+  color: #313714;
+  margin: 15px 0 0 0;
+}
+.action__form--btn {
+  height: 60px;
+  width: 244px;
+  background-color: #313714;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin: 25px 0 0 0;
+}
+
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 0 0 0;
+  padding: 15px 0;
+}
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__logo img {
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+}
+.footer__title {
+  margin: 0 0 0 10px;
+}
+.footer__title-1 {
+  font-size: 42px;
+  font-weight: 600;
+  color: #313714;
+}
+.footer__title-2 {
+  font-size: 21px;
+  font-weight: 400;
+  color: #313714;
+  margin: -5px 0 0 0;
+}
+.footer__list {
+  display: flex;
+}
+.footer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+.footer__item:first-child {
+  margin-left: 0;
+}
+.footer__item:last-child {
+  margin-left: 100px;
+}
+.footer__item:last-child span {
+  margin-left: 10px;
+}
+.footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #313714;
+}
+
+@media (max-width: 1200px) {
+  .action__items {
+    justify-content: center;
+  }
+}
 @media (max-width: 1070px) {
   .cases__items {
     gap: 50px;
     margin: 50px 0 0 0;
+  }
+  .footer__body {
+    flex-direction: column;
+    border-top: 1px solid #313714;
+  }
+  .footer__list {
+    margin: 15px 0 0 0;
   }
 }
 @media (max-width: 768px) {
@@ -961,6 +1113,18 @@ button {
   }
   .prices__cards {
     padding: 0 15px;
+  }
+  .action__title {
+    font-size: 36px;
+  }
+  .action__items {
+    margin: 25px 0 0 0;
+    align-items: center;
+  }
+  .action__item {
+    align-items: center;
+    padding: 10px 20px;
+    min-height: 85px;
   }
 }
 @media (max-width: 550px) {
@@ -1018,5 +1182,59 @@ button {
   .prices__action--btn {
     padding: 12px 40px;
     max-width: 100%;
+  }
+  .action__title {
+    font-size: 26px;
+  }
+  .action__item--txt {
+    font-size: 12px;
+  }
+  .action__form {
+    margin: 50px 0 0 0;
+    padding: 30px 25px;
+  }
+  .action__form::before {
+    bottom: -90px;
+    left: -135px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+    display: block;
+  }
+  .action__form--title {
+    font-size: 20px;
+  }
+  .action__form--txt {
+    font-size: 12px;
+    margin: 5px 0 0 0;
+  }
+  .action__form--btn {
+    height: 35px;
+    width: 140px;
+    font-size: 10px;
+    margin: 15px 0 0 0;
+  }
+  .footer__logo img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .footer__title {
+    margin: 0 0 0 5px;
+  }
+  .footer__title-1 {
+    font-size: 20px;
+  }
+  .footer__title-2 {
+    font-size: 12px;
+  }
+  .footer__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__item:last-child {
+    margin-left: 15px;
+  }
+  .footer__link {
+    font-size: 12px;
   }
 }

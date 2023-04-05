@@ -1,8 +1,24 @@
+@media (max-width: 1200px){
+    .action{
+        &__items{
+            justify-content: center;
+        }
+    }
+}
 @media (max-width: 1070px) {
     .cases{
         &__items{
             gap: 50px;
             margin: 50px 0 0 0;
+        }
+    }
+    .footer{
+        &__body{
+            flex-direction: column;
+            border-top: 1px solid $dark-green;
+        }
+        &__list{
+            margin: 15px 0 0 0;
         }
     }
 }
@@ -36,6 +52,23 @@
         }
         &__cards{
             padding: 0 15px;
+        }
+    }
+    .action{
+        &__title{
+            font-size: 36px;
+        }
+        &__items{
+            margin: 25px 0 0 0;
+            align-items: center;
+        }
+        &__item{
+            align-items: center;
+            padding: 10px 20px;
+            min-height: 85px;
+            // &--txt{
+            //     font-size: 14px;
+            // }
         }
     }
 }
@@ -98,12 +131,82 @@
             }
         }
     }
+    .action{
+        &__title{
+            font-size: 26px;
+        }
+        &__item{
+            &--txt{
+                font-size: 12px;
+            }
+        }
+        &__form{
+            margin: 50px 0 0 0;
+            padding: 30px 25px;
+            &::before{
+                bottom: -90px;
+                left: -135px;
+                border-radius: 50%;
+                border: 7px solid #fff;
+                display: block;
+            }
+            &--title{
+                font-size: $txt-s;
+            }
+            &--txt{
+                font-size: 12px;
+                margin: 5px 0 0 0;
+            }
+            &--btn{
+                height: 35px;
+                width: 140px;
+                font-size: 10px;
+                margin: 15px 0 0 0;
+            }
+        }
+    }
+    .footer{
+        &__body{
+            
+        }
+        &__logo{
+            img{
+                max-width: 40px;
+                max-height: 40px;
+            }
+        }
+        &__title{
+            margin: 0 0 0 5px;
+            &-1{
+                font-size: $txt-s;
+            }
+            &-2{
+                font-size: 12px;
+            }
+        }
+        &__list{
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        &__item{
+            &:last-child{
+                margin-left: 15px;
+            }
+        }
+        &__link{
+            font-size: 12px;
+        }
+    }
 }
 
-// @media (max-width: 450px) {
-//     .prices{
-//         &__card{
-//             max-width: 100%;
+// @media (max-width: 320px) {
+//     .footer{
+//         &__item{
+//             &:last-child{
+//                 margin-left: 0px;
+//                 margin-top: 10px;
+//             }
 //         }
 //     }
 // }

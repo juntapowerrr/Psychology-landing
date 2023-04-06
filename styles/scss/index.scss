@@ -286,6 +286,7 @@
             margin: 10px 0 0 0;
         }
         .btn-action-1{
+            // padding: 14px 20px;
             width: 194px;
             height: 48px;
             color: #fff;
@@ -304,8 +305,9 @@
             }
         }
         .btn-action-2{
-            width: 194px;
-            height: 48px;
+            padding: 14px 20px;
+            // width: 194px;
+            // height: 48px;
             color: $dark;
             background-color: $silver;
             border-radius: 8px;

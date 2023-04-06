@@ -1,6 +1,6 @@
 $(document).ready(function() {
     //$("a[href^='#']").fixedHeaderScroll( {
-    $(".header__link").fixedHeaderScroll( {
+    $(".header__link, .main-section__action--btn").fixedHeaderScroll( {
         headerSelector: 'header',
         offset: 0,
         //offset: $('.header').offsetHeight,

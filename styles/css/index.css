@@ -516,8 +516,7 @@ button {
   transition: all 0.1s ease;
 }
 .main-section__action .btn-action-2 {
-  width: 194px;
-  height: 48px;
+  padding: 14px 20px;
   color: #161616;
   background-color: #D4D4D8;
   border-radius: 8px;

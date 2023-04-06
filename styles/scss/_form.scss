@@ -1,6 +1,10 @@
 @import 'var';
 @import 'common';
 
+.no-scroll{
+    overflow: hidden;
+}
+
 .popup-bg {
     position: fixed;
     top: 0;
@@ -9,6 +13,7 @@
     height: 100%;
     background: rgba(0,0,0,0.85);
     //display: none;
+    z-index: 999;
 }
 
 .form{

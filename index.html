@@ -49,7 +49,7 @@
                 <h1 class="main-section--title">Вчу любові до себе через особистий приклад змін</h1>
                 <p class="main-section--txt">Глибока особиста трансформація, своїх цінностей, своїх пріоритетів, розширення власного в будь-яких обсягах.</p>
                 <div class="main-section__action">
-                    <button class="btn-action-1 txt-center">Звʼязатися зі мною</button>
+                    <button class="btn-action-1 open-popup txt-center">Звʼязатися зі мною</button>
                     <!-- <button class="btn-action-2 txt-center">Перейти до послуг</button> -->
                     <!-- <a href="#" class="main-section__action--btn btn-action-1 txt-center">Звʼязатися зі мною</a> -->
                     <a href="#priceSection" class="main-section__action--btn btn-action-2 txt-center">Перейти до послуг</a>
@@ -258,9 +258,53 @@
             </div>
         </div>
     </footer>
+    <div class="popup-bg">
+        <form action="/" id="form" class="form">
+            <img class="close-popup" src="./assets/svg/close.svg" alt="Close button">
+            <h2 class="form__title">Залишити заявку</h2>
+            <p class="form__txt">Ми зв'яжемося з вами протягом доби в робочий час з 9:00 до 19:00</p>
+            <div class="input-control">
+                <label for="username">Ваше імʼя *</label>
+                <input id="username" name="username" type="text" placeholder="Максон">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="phone">Номер телефону *</label>
+                <input id="phone" name="phone" type="tel" placeholder="+38 (XXX)-XX-XX-XXX">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="text">Напишіть причину вашого звернення</label>
+                <textarea name="text" id="text" type="text" placeholder="Допоможіть!"></textarea>
+                <div class="error"></div>
+            </div>
+            <p class="radio__txt">Оберіть зручний спосіб для зв'язку з Вами</p>
+            <div class="radio-container">
+                <div class="radio-control">
+                    <input name="radio" id="call" type="radio" checked>
+                    <label for="call"><span></span>Дзвінок</label>
+                </div>
+                <div class="radio-control">
+                    <input name="radio" id="telegram" type="radio">
+                    <label for="telegram"><span></span>Telegram</label>
+                </div>
+                <div class="radio-control">
+                    <input name="radio" id="viber" type="radio">
+                    <label for="viber"><span></span>Viber</label>
+                </div>
+                <div class="radio-control">
+                    <input name="radio" id="whatsapp" type="radio">
+                    <label for="whatsapp"><span></span>Whats App</label>
+                </div>
+            </div>
+            <button class="form__btn txt-center" type="submit">Відправити</button>
+        </form>
+      </div>
     <script src="./js/preloader.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="./js/jquery.fixedheaderscroll.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/popup.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>

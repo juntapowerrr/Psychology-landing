@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 @import 'var';
 @import 'common';
+@import 'form';
 
 @media (max-width: 767px){
     body.lock{
@@ -286,9 +287,9 @@
             margin: 10px 0 0 0;
         }
         .btn-action-1{
-            // padding: 14px 20px;
-            width: 194px;
-            height: 48px;
+            padding: 14px 20px;
+            // width: 194px;
+            // height: 48px;
             color: #fff;
             background-color: $dark-green-3;
             border-radius: 8px;

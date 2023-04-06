@@ -1,0 +1,148 @@
+@import 'var';
+@import 'common';
+
+.popup-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    //display: none;
+}
+
+.form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 540px;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: $silver;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+    .close-popup{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    &__title{
+        font-size: $txt-xl;
+        font-weight: 600;
+        color: $dark-green;
+        letter-spacing: -0.02em;
+    }
+    &__txt{
+        font-size: $txt-xs;
+        font-weight: 400;
+        color: $bodily;
+        margin: 25px 0 50px 0;
+    }
+    .input-control{
+        display: flex;
+        flex-direction: column;
+        label{
+            margin: 0 0 5px 0;
+            font-size: 14px;
+            font-weight: 500;
+            color: $dark-green-2;
+        }
+        textarea{
+            display: block;
+            //max-width: 100%;
+            min-width: 100%;
+            min-height: 130px;
+            //max-height: 400px;
+            padding: 12px 16px;
+            border: 1px solid #D0D5DD;
+            border-radius: 8px;
+            resize: none;
+        }
+        input{
+            display: block;
+            border: 1px solid #D0D5DD;
+            border-radius: 8px;
+            font-size: $txt-xxs;
+            width: 100%;
+            padding: 12px 16px;
+        }
+        input:focus{
+            outline: 0;
+        }
+    }
+    .input-control.success input {
+        border-color: green;
+    }
+    .input-control.error input {
+        border-color: red;
+    }
+    .input-control .error{
+        color: red;
+        font-size: 12px;
+        height: 25px;
+        margin: 5px 0 0 0;
+    }
+    .radio{
+        &__txt{
+            font-size: 14px;
+            font-weight: 500;
+            color: $dark-green-2;
+        }
+        &-container{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            gap: 15px 0;
+            flex-wrap: wrap;
+            margin: 15px 0 0 0;
+        }
+        &-control{
+            flex: 50%;
+            label{
+                //margin: 0 0 0 10px;
+                font-size: $txt-xxs;
+                font-weight: 500;
+                color: $dark-green-2;
+                cursor: pointer;
+            }
+            input[type=radio] {
+                display: none;
+            }
+            input[type=radio] + label span {
+                border: 1px solid #D0D5DD;
+                border-radius: 6px;
+                font-size: $txt-xxs;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin: 0 10px 4px 0;
+                //padding: 2px;
+                background-color: #fff;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+            }
+            input[type=radio]:checked + label span {
+                background: $dark-green-3;
+                transition: all .3s ease 0s;
+            }
+        }
+        
+    }
+    &__btn{
+        height: 48px;
+        width: 100%;
+        background-color: $dark-green-3;
+        color: #fff;
+        font-size: $txt-xxs;
+        font-weight: 500;
+        border-radius: 8px;
+        margin: 30px 0 0 0;
+    }
+}

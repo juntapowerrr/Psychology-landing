@@ -191,7 +191,7 @@ button {
 }
 
 .do-scroll {
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 .popup-bg {
@@ -203,6 +203,7 @@ button {
   background: rgba(0, 0, 0, 0.85);
   display: none;
   z-index: 999;
+  backdrop-filter: blur(5px);
 }
 
 .form {
